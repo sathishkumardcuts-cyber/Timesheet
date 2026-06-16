@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; padding-bottom: 70px; }
+        
+        /* Content Area */
+        .container { padding: 20px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        h1 { font-size: 1.5rem; margin-bottom: 20px; }
+
+        /* Bottom Navigation Menu */
+        .nav-menu {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            border-top: 1px solid #eee;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #6c757d;
+            font-size: 0.75rem;
+            text-align: center;
+        }
+
+        .nav-item.active { color: #007bff; font-weight: bold; }
+        .nav-item span { display: block; font-size: 1.2rem; margin-bottom: 2px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Daily Reports</h1>
+        
+        <div class="card">
+            <h3>Today's Progress</h3>
+            <p style="color: #666; margin-top: 10px;">No updates submitted yet for June 16.</p>
+        </div>
+        
+        <button style="width: 100%; padding: 15px; background: #007bff; color: white; border: none; border-radius: 8px;">
+            + New Daily Report
+        </button>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-item active"><span>🏠</span>Home</a>
+        <a href="https://docs.google.com/spreadsheets/?usp=sheets_alc&authuser=0" class="nav-item"><span>⏱️</span>TimeSheet</a>
+        <a href="report.html" class="nav-item"><span>📊</span>Reports</a>
+        <a href="project.html" class="nav-item"><span>📁</span>Projects</a>
+        <a href="setting.html" class="nav-item"><span>⚙️</span>Setting</a>
+    </nav>
+
+</body>
+</html>

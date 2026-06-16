@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; padding-bottom: 80px; color: #333; }
+        
+        .container { padding: 20px; }
+        h1 { font-size: 1.5rem; margin-bottom: 20px; }
+        h2 { font-size: 0.9rem; color: #888; margin: 20px 0 10px 5px; text-transform: uppercase; }
+
+        .settings-group { background: white; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .setting-item { padding: 15px 20px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center; }
+        .setting-item:last-child { border-bottom: none; }
+        
+        .btn-auth { display: block; width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; }
+        .login { background: #007bff; color: white; }
+        .signup { background: #e9ecef; color: #333; }
+
+        /* Navigation Bar */
+        .nav-menu { position: fixed; bottom: 0; width: 100%; background: #fff; display: flex; justify-content: space-around; padding: 10px 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); border-top: 1px solid #eee; z-index: 1000; }
+        .nav-item { text-decoration: none; color: #6c757d; font-size: 0.7rem; text-align: center; }
+        .nav-item.active { color: #007bff; font-weight: bold; }
+        .nav-item span { display: block; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Settings</h1>
+
+        <h2>Account</h2>
+        <div class="settings-group">
+            <div class="setting-item">
+                <button class="btn-auth login">Login</button>
+            </div>
+            <div class="setting-item">
+                <button class="btn-auth signup">Sign Up</button>
+            </div>
+        </div>
+
+        <h2>Daily Reports Preferences</h2>
+        <div class="settings-group">
+            <div class="setting-item">Daily Reminders <span>Toggle</span></div>
+            <div class="setting-item">Auto-Save Drafts <span>Toggle</span></div>
+            <div class="setting-item">Default Project View <span>Arrow</span></div>
+        </div>
+
+        <h2>App Settings</h2>
+        <div class="settings-group">
+            <div class="setting-item">Notifications</div>
+            <div class="setting-item">Dark Mode</div>
+            <div class="setting-item">Log Out</div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-item"><span>🏠</span>Home</a>
+        <a href="timesheet.html" class="nav-item"><span>⏱️</span>Time</a>
+        <a href="report.html" class="nav-item"><span>📊</span>Report</a>
+        <a href="projects.html" class="nav-item"><span>📁</span>Proj</a>
+        <a href="setting.html" class="nav-item active"><span>⚙️</span>Set</a>
+    </nav>
+
+</body>
+</html>
